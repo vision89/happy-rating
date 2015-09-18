@@ -2,20 +2,25 @@
   "name": "rating-system",
   "version": "0.0.1",
   "authors": [
-    "Anonymous <anonymous@example.com>"
+    "Dustin Gulley dlgulley411@gmail.com"
   ],
-  "description": "An element providing a solution to no problem in particular.",
+  "description": "A polymer pain rating system",
   "keywords": [
     "web-component",
     "polymer",
     "seed"
   ],
   "main": "rating-system.html",
-  "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "license": "LICENSE.txt",
+  "homepage": "https://github.com/vision89/happy-rating.git",
   "ignore": [
     "/.*",
-    "/test/"
+    "/test/",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
   ],
   "dependencies": {
     "iron-icon": "PolymerElements/iron-icon#~1.0.4",
