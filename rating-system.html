@@ -78,23 +78,23 @@ Example:
 
   <template>
 
-    <paper-slider class="green" min="1" max="10" value="{{rating}}" pin="" snaps="true"></paper-slider>
+    <paper-slider class="green" min="1" max="10" value="{{rating}}" pin="" snaps="true" disabled="[[disabled]]"></paper-slider>
 
     <div class="icons">
 
-      <span class="display-icon" hidden$="[[happyHidden]]">
+      <span class="display-icon" hidden$="[[_happyHidden]]">
 
         <iron-icon class="icon-color" icon="[[happyIcon]]"></iron-icon>
 
       </span>
 
-      <span class="display-icon" hidden$="[[okayHidden]]">
+      <span class="display-icon" hidden$="[[_okayHidden]]">
 
         <iron-icon class="icon-color" icon="[[okayIcon]]"></iron-icon>
 
       </span>
 
-      <span class="display-icon" hidden$="[[sadHidden]]">
+      <span class="display-icon" hidden$="[[_sadHidden]]">
 
         <iron-icon class="icon-color" icon="[[sadIcon]]"></iron-icon>
 
@@ -114,6 +114,10 @@ Example:
 
     properties: {
 
+      /**
+       * Rating selected
+       * @type {Object}
+       */
       rating: {
 
         type: Number,
@@ -124,6 +128,10 @@ Example:
 
       },
 
+      /**
+       * Name of happy icon
+       * @type {Object}
+       */
       happyIcon: {
 
         type: String,
@@ -132,6 +140,10 @@ Example:
 
       },
 
+      /**
+       * Name of okay icon
+       * @type {Object}
+       */
       okayIcon: {
 
         type: String,
@@ -140,6 +152,10 @@ Example:
 
       },
 
+      /**
+       * Name of sad icon
+       * @type {Object}
+       */
       sadIcon: {
 
         type: String,
@@ -148,7 +164,11 @@ Example:
 
       },
 
-      happyHidden: {
+      /**
+       * Predicate for hiding happy icon
+       * @type {Object}
+       */
+      _happyHidden: {
 
         type: Boolean,
         value: true,
@@ -156,7 +176,11 @@ Example:
 
       },
 
-      okayHidden: {
+      /**
+       * Predicate for hiding okay icon
+       * @type {Object}
+       */
+      _okayHidden: {
 
         type: Boolean,
         value: true,
@@ -164,16 +188,35 @@ Example:
 
       },
 
-      sadHidden: {
+      /**
+       * Predicate for hiding sad icon
+       * @type {Object}
+       */
+      _sadHidden: {
 
         type: Boolean,
         value: true,
+        notify: false
+
+      },
+
+      /**
+       * Predicate for disabling internal elements
+       * @type {Object}
+       */
+      disabled: {
+
+        type: Boolean,
+        value: false,
         notify: false
 
       }
 
     },
 
+    /**
+     * Decides which icon to show and which to hide
+     */
     _setHiddenIcons: function () {
 
       if ( this.rating < 4 ) {
