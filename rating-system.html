@@ -221,21 +221,21 @@ Example:
 
       if ( this.rating < 4 ) {
 
-        this.happyHidden = false;
-        this.okayHidden = true;
-        this.sadHidden = true;
+        this._happyHidden = false;
+        this._okayHidden = true;
+        this._sadHidden = true;
 
       } else if ( this.rating > 6 ) {
 
-        this.sadHidden = false;
-        this.happyHidden = true;
-        this.okayHidden = true;
+        this._sadHidden = false;
+        this._happyHidden = true;
+        this._okayHidden = true;
 
       } else {
 
-        this.okayHidden = false;
-        this.sadHidden = true;
-        this.happyHidden = true;
+        this._okayHidden = false;
+        this._sadHidden = true;
+        this._happyHidden = true;
 
       }
 
