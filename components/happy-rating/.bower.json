@@ -1,0 +1,45 @@
+{
+  "name": "happy-rating",
+  "authors": [
+    "Dustin Gulley dlgulley411@gmail.com"
+  ],
+  "description": "A polymer pain rating system",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "seed"
+  ],
+  "main": "rating-system.html",
+  "license": "LICENSE.txt",
+  "homepage": "https://github.com/vision89/happy-rating.git",
+  "ignore": [
+    "/.*",
+    "/test/",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-icon": "PolymerElements/iron-icon#~1.0.4",
+    "iron-icons": "PolymerElements/iron-icons#~1.0.3",
+    "iron-iconset": "PolymerElements/iron-iconset#~1.0.2",
+    "paper-slider": "PolymerElements/paper-slider#~1.0.6",
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  },
+  "_release": "336f1fca57",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "336f1fca577c3d352afad6f368dce6c07960c324"
+  },
+  "_source": "git://github.com/vision89/happy-rating.git",
+  "_target": "master",
+  "_originalSource": "vision89/happy-rating",
+  "_direct": true
+}
