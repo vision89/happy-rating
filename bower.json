@@ -1,6 +1,6 @@
 {
   "name": "happy-rating",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     "Dustin Gulley dlgulley411@gmail.com"
   ],
@@ -10,7 +10,7 @@
     "polymer",
     "seed"
   ],
-  "main": "rating-system.html",
+  "main": "happy-rating.html",
   "license": "LICENSE.txt",
   "homepage": "https://github.com/vision89/happy-rating.git",
   "ignore": [
