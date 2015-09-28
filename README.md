@@ -1,4 +1,4 @@
-# rating-system
+# happy-rating
 
 A pain rating system written in polymer
 
@@ -6,4 +6,4 @@ A pain rating system written in polymer
 
 ##Install
 
-		bower install rating-system --save
+		bower install vision89/happy-rating --save
